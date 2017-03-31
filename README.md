@@ -1,2 +1,2 @@
 # School-Work
-Files containing HTML pages with assigned work.
+V tomto uložišti se nacházejí HTML soubory s pracemi na zadané téma. Témata se týkají programování.
