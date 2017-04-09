@@ -1,0 +1,16 @@
+C:\Users\electricMace\Desktop\MVVM_WebVersion\Sample\Notepad\Notepad\bin\Debug\Notepad.exe.config
+C:\Users\electricMace\Desktop\MVVM_WebVersion\Sample\Notepad\Notepad\bin\Debug\Notepad.exe
+C:\Users\electricMace\Desktop\MVVM_WebVersion\Sample\Notepad\Notepad\bin\Debug\Notepad.pdb
+C:\Users\electricMace\Desktop\MVVM_WebVersion\Sample\Notepad\Notepad\obj\Debug\Notepad.csprojResolveAssemblyReference.cache
+C:\Users\electricMace\Desktop\MVVM_WebVersion\Sample\Notepad\Notepad\obj\Debug\MainWindow.g.cs
+C:\Users\electricMace\Desktop\MVVM_WebVersion\Sample\Notepad\Notepad\obj\Debug\Views\RootPage.g.cs
+C:\Users\electricMace\Desktop\MVVM_WebVersion\Sample\Notepad\Notepad\obj\Debug\App.g.cs
+C:\Users\electricMace\Desktop\MVVM_WebVersion\Sample\Notepad\Notepad\obj\Debug\Notepad_MarkupCompile.cache
+C:\Users\electricMace\Desktop\MVVM_WebVersion\Sample\Notepad\Notepad\obj\Debug\Notepad_MarkupCompile.lref
+C:\Users\electricMace\Desktop\MVVM_WebVersion\Sample\Notepad\Notepad\obj\Debug\MainWindow.baml
+C:\Users\electricMace\Desktop\MVVM_WebVersion\Sample\Notepad\Notepad\obj\Debug\Views\RootPage.baml
+C:\Users\electricMace\Desktop\MVVM_WebVersion\Sample\Notepad\Notepad\obj\Debug\Notepad.g.resources
+C:\Users\electricMace\Desktop\MVVM_WebVersion\Sample\Notepad\Notepad\obj\Debug\Notepad.Properties.Resources.resources
+C:\Users\electricMace\Desktop\MVVM_WebVersion\Sample\Notepad\Notepad\obj\Debug\Notepad.csproj.GenerateResource.Cache
+C:\Users\electricMace\Desktop\MVVM_WebVersion\Sample\Notepad\Notepad\obj\Debug\Notepad.exe
+C:\Users\electricMace\Desktop\MVVM_WebVersion\Sample\Notepad\Notepad\obj\Debug\Notepad.pdb
