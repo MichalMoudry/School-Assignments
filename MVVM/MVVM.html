@@ -205,7 +205,7 @@
       
 			<p class="author">Michal Moudrý</p>
 			
-				Při vydání WPF v roce 2006 si softwarový inženýři v Microsoftu řekli, že by bylo dobré nějakým způsobem členit kód aplikace a tedy vytvořili vzorec MVVM, který bude slpužit tomuto účelu na všech možných XAML platformách.
+				Při vydání WPF v roce 2006 si softwarový inženýři v Microsoftu řekli, že by bylo dobré nějakým způsobem členit kód aplikace, a tedy vytvořili vzorec MVVM, který bude slpužit tomuto účelu na všech možných XAML platformách.
 				<p></p>
 				Jedná se tedy o vzorec pro rozčlenění kódu v projektu. Kdy se dá aplikovat na všech XAML platformách. Cílem MVVM je poskytnout jasné oddělení ovladačů v uživatelském rozhraní a jejich logikou. Jak z názvu vyplívá, tak se skládá ze tří částí, tedy Model, View, ViewModel. Ale doopravdy jsou zde čtyři části, kdy ke třem zmíněným částem patří část Services. Tento vzorec může být těžší na pochopení, vzhledem k jeho názvu (Model-View-ViewModel, kdy struktura je View-ViewModel-Model) a také kvůli existenci čtvrté vrstvy tohoto vzorce, přesto všechno je velice jednoduchý a užitečný viz. výhody.
 				
@@ -230,7 +230,7 @@
 			
 			<H4>View</H4>
 			<p>
-				Tato vrstva definuje strukturu, layout a obecně vzhled uživatelského rozhraní. View by měl být ve většíně napsaný v XAML s minimálním code-behind, který neobsahuje logiku (př. Page1.xaml je část s XAML a Page1.xaml.cs je code-behind pro tuto část). View a ViewModel jsou propojeny zapomoci code-behind.<br>
+				Tato vrstva definuje strukturu, layout a obecně vzhled uživatelského rozhraní. View by měl být ve většíně napsaný v XAML s minimálním code-behind, který neobsahuje logiku (př. Page1.xaml je část s XAML a Page1.xaml.cs je code-behind pro tuto část). View a ViewModel jsou propojeny za pomoci code-behind.<br>
 				<img src="Assets/Images/View.png" title="Ukázka části View" alt="Ukázka části View" />
 			</p>
 			
@@ -242,7 +242,7 @@
 			
 			<H4>Model</H4>
 			<p>
-				Model je implementace doménového modelu aplikace, který zahrnuje business a validační logiku, uložiště, DTO a POCO, například to je třída Person, která má nějaké atributy a může mít i logiku pro porovnávání objektů viz. <a href="https://ucitel.sps-prosek.cz/~maly/PRG/materials/csharp/#porovnavani-objektu" title="Porovnávání objeků" alt="Porovnávání objeků" target="_blank">Porovnávání objeků</a>.<br>
+				Model je implementace doménového modelu aplikace, který zahrnuje business a validační logiku, uložiště, DTO a POCO, například to je třída Person, která má nějaké atributy a může mít i logiku pro porovnávání objektů viz. <a href="https://ucitel.sps-prosek.cz/~maly/PRG/materials/csharp/#porovnavani-objektu" title="Porovnávání objeků" alt="Porovnávání objeků" target="_blank">Porovnávání objektů</a>.<br>
 				<img src="Assets/Images/Model.png" title="Ukázka části Model" alt="Ukázka části Model" />
 			</p>
 			
@@ -251,7 +251,7 @@
 			
 			<H4>Shrnutí činnosti mezi vrstvami</H4>
 			<p>
-				Kód je tedy rozdělený na čtyři vrstvy, kdy je zde View část, která obsahuje všechny záležitosti týkající se grafiky, tedy různé animace, změny barvy, atd. Přičemž tato vrstva se dokáže odkazovat na ViewModel a ne naopak, výhodou je nezávislost ViewModelu pro přenášení mezi různými assembly. ViewModel vrstva slouží pro práci s Modelem, proto obsahuje operace (metody) s Modelem, ke kterému je "spojena" (pozn. v praxi má jeden Model vždy jeden ViewModel). Tato vrstva může využít vrstvy Services pro abstrakci metod, například ukládání do souboru, pokud to chceme změnit na ukládání na cloudové uložiště, tak stačí změnit vrstvu Services, bez nutnosti měnit ViewModel. Vrstva Model slouží jako logika aplikace, kdy tato vrstva zahrnuje například DTO, <a href="https://en.wikipedia.org/wiki/Plain_old_CLR_object" title="POCO" alt="POCO" target="_blank">POCO</a> a nebo validační logiku (např. porovnání objektů).
+				Kód je tedy rozdělený na čtyři vrstvy, kdy je zde View část, která obsahuje všechny záležitosti týkající se grafiky, tedy různé animace, změny barvy, atd. Přičemž tato vrstva se dokáže odkazovat na ViewModel a ne naopak, výhodou je nezávislost ViewModelu pro přenášení mezi různými assembly. ViewModel vrstva slouží pro práci s Modelem, proto obsahuje operace (metody) s Modelem, ke kterému je "spojena" (pozn. v praxi má jeden Model vždy jeden ViewModel). Tato vrstva může využít vrstvy Services pro abstrakci metod, například ukládání do souboru, pokud to chceme změnit na ukládání na cloudové uložiště, tak stačí změnit vrstvu Services, bez nutnosti měnit ViewModel. Vrstva Model slouží jako logika aplikace, kdy tato vrstva zahrnuje například DTO, <a href="https://en.wikipedia.org/wiki/Plain_old_CLR_object" title="POCO" alt="POCO" target="_blank">POCO</a> anebo validační logiku (např. porovnání objektů).
 			</p>
 			
 			<div>
@@ -277,7 +277,7 @@
 				
 				<H4>ViewModel</H4>
 				<p>
-					ViewModel část ukázky je FileViewModel.cs, což je třída, která pracuje s Model částí a má na starost ukládání a načítání z uložiště cílového zařízení. Přičemž využívá vrstvy Service, které mají zaúkol abstrakci metod pro danou práci s Modelem.<br>
+					ViewModel část ukázky je FileViewModel.cs, což je třída, která pracuje s Model částí a má na starost ukládání a načítání z uložiště cílového zařízení. Přičemž využívá vrstvy Service, které mají za úkol abstrakci metod pro danou práci s Modelem.<br>
 					<img src="Assets/Images/SampleViewModel.png" title="Ukázková aplikace - ViewModel" alt="Ukázková aplikace - ViewModel" />
 				</p>
 				
@@ -289,7 +289,7 @@
 				
 				<H4>Services</H4>
 				<p>
-					Services část ukázky je třída FileService.cs, která má zaúčel abstrakci metod ViewModelu a v tomto případě se jedná o ukládání a načítaní souboru z uložiště. Zde se projeví výhoda služeb, kdy je možné změnit službu a není nutné zasahovat do ViewModelu.<br>
+					Services část ukázky je třída FileService.cs, která má za účel abstrakci metod ViewModelu a v tomto případě se jedná o ukládání a načítaní souboru z uložiště. Zde se projeví výhoda služeb, kdy je možné změnit službu a není nutné zasahovat do ViewModelu.<br>
 					<img src="Assets/Images/SampleServices.png" title="Ukázková aplikace - Services" alt="Ukázková aplikace - Services" />
 				</p>
 				
